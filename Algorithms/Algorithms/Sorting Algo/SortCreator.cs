@@ -39,4 +39,12 @@ namespace Algorithms.Sorting_Algo
             return new SelectionSort();
         }
     }
+
+    public class ConcreteCreatorM : SortCreator
+    {
+        public override ISorts FactoryMethod()
+        {
+            return new MergeSort();
+        }
+    }
 }
